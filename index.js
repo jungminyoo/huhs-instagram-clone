@@ -1,7 +1,7 @@
 // initial user profile
 const defaultProfile = {
   id: "hello.world",
-  img: "../assets/default_profile.svg",
+  img: "assets/default_profile.svg",
   name: "헬로월드",
   description: `Hello, World!`,
   link: "https://en.wikipedia.org/wiki/%22Hello,_World!%22_program",
@@ -153,7 +153,7 @@ function updatePostsUI() {
     postsGallery.classList.add("posts__gallary--no-posts");
     postsGallery.innerHTML = `<div class="posts__no-posts">
                                 <div class="posts__circle">
-                                  <img src="../assets/camera_icon.svg" alt="camera_icon" />
+                                  <img src="assets/camera_icon.svg" alt="camera_icon" />
                                 </div>
                                 <h3>게시물 없음</h3>
                               </div>`;
@@ -167,11 +167,11 @@ function updatePostsUI() {
       `<div class="post" id="post-${post.id}">
         <div class="post__info">
           <div class="post__info-item">
-            <img src="../assets/heart_icon.svg" alt="heart_icon" />
+            <img src="assets/heart_icon.svg" alt="heart_icon" />
             ${post.likes}
           </div>
           <div class="post__info-item">
-            <img src="../assets/comment_icon.svg" alt="comment_icon" />
+            <img src="assets/comment_icon.svg" alt="comment_icon" />
             ${post.comments}
           </div>
         </div>
@@ -196,18 +196,18 @@ function updatePostsUI() {
 
             <div class="post-modal__buttons">
               <button class="post-modal__button post-modal__update-button">
-                <img src="../assets/edit_icon.svg" alt="edit_icon" />
+                <img src="assets/edit_icon.svg" alt="edit_icon" />
               </button>
               <button class="post-modal__button post-modal__delete-button"> 
                 <img
-                  src="../assets/trashcan_icon.svg"
+                  src="assets/trashcan_icon.svg"
                   alt="trashcan_icon"
                 />
               </button>
             </div>
 
             <button class="modal__close-button">
-              <img src="../assets/close_icon.svg" alt="close_icon" />
+              <img src="assets/close_icon.svg" alt="close_icon" />
             </button>
           </form>
         </dialog>
