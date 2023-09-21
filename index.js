@@ -80,7 +80,7 @@ function updateProfileUI() {
   const profile = JSON.parse(localStorage.getItem("profile")) || defaultProfile;
   const posts = JSON.parse(localStorage.getItem("posts")) || [];
 
-  document.title = `${name}(@${id}) • Instagram`;
+  document.title = `${profile.name}(@${profile.id}) • Instagram`;
   profile.posts = posts.length;
 
   profileImg.setAttribute("src", profile.img);
